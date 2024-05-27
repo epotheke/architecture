@@ -1,6 +1,6 @@
 == The epotheke System Architecture at a glance
 
-image:architecture/blob/main/epotheke-UML-v1.0.0.svg[epotheke System Architecture]
+image:https://github.com/epotheke/architecture/blob/main/epotheke-UML-v1.0.0.svg[epotheke System Architecture]
 
 As shown in the figure above, the epotheke System Architecture mainly consists of the following parts:
 
