@@ -1,2 +1,2 @@
-# architecture
-The epotheke architecture at a glance
+# The epotheke architecture at a glance
+
