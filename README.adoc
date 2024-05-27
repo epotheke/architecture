@@ -1,12 +1,12 @@
-== The epotheke System Architecture at a glance
+== The *e*potheke System Architecture at a glance
 
 image:https://github.com/epotheke/architecture/blob/main/epotheke-UML-v1.0.0.svg[epotheke System Architecture]
 
 As shown in the figure above, the epotheke System Architecture mainly consists of the following parts:
 
-* *epotheke SDK* 
-* *epotheke Service*
+* *epotheke-SDK* 
+* *epotheke-Service*
 
-=== epotheke SDK 
+=== *e*potheke-SDK 
 
-=== epotheke Service 
+=== *e*potheke Service 
