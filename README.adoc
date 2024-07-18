@@ -4,9 +4,25 @@ image:https://github.com/epotheke/architecture/blob/main/epotheke-UML-v1.0.0.svg
 
 As shown in the figure above, the *epotheke System Architecture* mainly consists of the following parts:
 
-* *epotheke-SDK* 
-* *epotheke-Service*
+* *epotheke SDK* 
+* *epotheke Service*
 
-=== epotheke-SDK 
+=== epotheke SDK
+The https://github.com/epotheke/epotheke-sdk[epotheke SDK] is a Kotlin Multi-Platform (KMP) library implementing the client side of the eHealth-CardLink protocol according to the specifications developed by https://gematik.de[gematik GmbH] with the extensions developed within the industry-driven https://github.com/eHealthCardLink[eHealth-CardLink-Taskforce]. It can be integrated in pharmacy apps and takes care of the communication with the epotheke Service and the handling of the eHealth card. 
+As shown in the figure above, it is extending the https://openecard.org[Open eCard] platform by CardLink- and ePrescription-specific functionality.
 
 === epotheke Service 
+The https://epotheke.com[epotheke Service] is an eHealth-CardLink-service according to the specifications developed by https://gematik.de[gematik GmbH] with the extension developed  within the industry-driven https://github.com/eHealthCardLink[eHealth-CardLink-Taskforce]. 
+As shown in the figure above, it contains the following services: 
+
+* the *Card Service* serves as a communication interface between the pharmacy app and the epotheke Service
+
+* the *Application Frontend Service* implements application-specific communication with the pharmacy app for redeeming ePrescriptions
+
+* the *Authentication Service* allows to link the mobile phone number to the eHealth card by exchanging transaction numbers (TAN) via SMS
+
+* the *Message Bus* takes care about the message-based communication between the various components,
+
+* the *Application Backend Service* implements application-specific communication with the connected primary systems (e.g. pharmacy management systems and pharmacy web shops) and finally
+
+* the *SICCT Service* which on the one hand emulates a virtual eHealth card terminal with remotely connected electronic health cards (eGK) towards the connector remotely connected to the epotheke Service in relation to the connector and at the same time also accesses the SMC-B of the pharmacy, which is used for the identification and authentication of the pharmacy in the telematics infrastructure.
